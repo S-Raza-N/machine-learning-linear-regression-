@@ -1,0 +1,24 @@
+IMPORTANT: Make sure to use MATLAB latest version (R2020a), otherwise some of the keywords used in the program won't be recognized.
+
+
+How to Run:
+
+1. Import the set of data you want to run the analysis on, by using the function Importing_Data("Filename/path") and storing it into a variable.
+   eg: a = Importing_Data("100Cr6.csv");
+
+2. Decide which model you want to use and accordingly select the proceeding functions.
+   Ex: "M1" stand for modle 1 and "M2" for model 2. 
+
+3. For instance we are using model 1: 
+     3.1) Firstly, calculate the X/coefficient values by using the function M1_CalcX() and pass in the variable in which the imported data is stored as a parameter.
+     3.2) Now calculate the R square value for the imported Data-set by using the function M1_Rsq() and pass in the variable in which the imported data is stored as a parameter.
+     3.3) Plot the comparision 2D-grpah for the different variable(phi ,temp, phi dot) of the respective Data-set against Kf using the function M1_2Dplot()and pass in the variable in which the imported data is stored as a parameter.
+     3.4) Plot the comparision 3D-grpah for the different variable(phi ,temp, phi dot) of the respective Data-set against Kf using the function M1_3Dplot()and pass in the variable in which the imported data is stored as a parameter.
+          *Note* : Due to the long model 2 equation the MatLab might take some time or even fail to run the function "M2_3Dplot()" but the code is correct.
+
+Hence the desiered results will be showed.
+
+**Note**: The detailed comments are added in the files for model 1 and the same concept of Linear Regression and correlation analysis, where the relation between the response, variable kf and predictor, variables x1...x6 are used in model 2 too, 
+          where only the model equation has been changed. 
+
+
